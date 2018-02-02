@@ -78,7 +78,100 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
          
-         <iframe width="600" height="400" src="https://live.amcharts.com/WU5OW/embed/" frameborder="0"></iframe> 
+		<title>Non-Russian Nationalities in Soviet | amCharts</title>
+		<meta name="description" content="chart created using amCharts live editor" />
+		
+<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"categoryField": "Nationality",
+					"startDuration": 1,
+					"backgroundAlpha": 0.8,
+					"theme": "light",
+					"categoryAxis": {
+						"gridPosition": "start"
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"fillAlphas": 1,
+							"id": "1972",
+							"title": "1972",
+							"type": "column",
+							"valueField": "1972"
+						},
+						{
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"fillAlphas": 1,
+							"id": "1989",
+							"title": "1989",
+							"type": "column",
+							"valueField": "1989"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"title": "Number of Residents"
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"useGraphSettings": true
+					},
+					"titles": [
+						{
+							"id": "Non-Russian Nationalities",
+							"size": 15,
+							"text": "Number of Non-Russians in Moscow by Nationality"
+						}
+					],
+					"dataProvider": [
+						{
+							"1972": "251350",
+							"1989": "175721",
+							"Nationality": "Jewish "
+						},
+						{
+							"1972": "184885",
+							"1989": "252670",
+							"Nationality": "Ukrainian"
+						},
+						{
+							"1972": "109252",
+							"1989": "157615",
+							"Nationality": "Tatar"
+						},
+						{
+							"1972": "50257",
+							"1989": "73005",
+							"Nationality": "Belarusian"
+						},
+						{
+							"1972": "25584",
+							"1989": "43989",
+							"Nationality": "Armenian"
+						},
+						{
+							"1972": "16878",
+							"1989": "30916",
+							"Nationality": "Mordvar"
+						}
+					]
+				}
+			);
+		</script>
          
         </div>
       </div>   
