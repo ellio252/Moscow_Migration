@@ -100,11 +100,11 @@
 
 var mymap = L.map('mapid').setView([56.5010, 84.9925], 3);
 
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoiZWxsaW8yNTIiLCJhIjoiY2pkODV3bWZqMXBpdTMzbGIxd25vNXlxZCJ9.71Pi1_DaNrnbD-t5-btaMw'
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+	 attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+   maxZoom: 18,
+   id: 'mapbox.streets',
+   accessToken: 'pk.eyJ1IjoiZWxsaW8yNTIiLCJhIjoiY2o4cTNkN2g5MG5sejJ6bzA5bHV6aTl6NiJ9.vkCzMFiuQ_Ww3Q3Ox4tUCw'
     }).addTo(mymap);
 
 var marker = L.marker([59.9343, 30.3351]).addTo(mymap);
