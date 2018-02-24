@@ -21,6 +21,15 @@
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
     
+    <!-- leaflet js -->
+    
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <style>
+
+#mapid { height: 600px; }
+
+</style>
+    
 
   </head>
 
@@ -83,24 +92,30 @@
      
        <!-- Leaflet.js -->
     <title>To Moscow</title>
-  <link rel="stylesheet" href="leaflet.css"/>
-  <script src="leaflet.js"></script>
-  <style>
-    #map{ height: 100% }
-  </style>
+  
+  <div id="mapid"></div>
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
-  <script>
+<script>
 
-  // initialize the map
-  var map = L.map('map').setView([56.9634, 66.9483], 4);
+var mymap = L.map('mapid').setView([56.5010, 84.9925], 3);
 
-  // load a tile layer
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox.streets',
-    accessToken:  'pk.eyJ1IjoiZWxsaW8yNTIiLCJhIjoiY2pkODV3bWZqMXBpdTMzbGIxd25vNXlxZCJ9.71Pi1_DaNrnbD-t5-btaMw'
-    }).addTo(map);
+    accessToken: 'pk.eyJ1IjoiZWxsaW8yNTIiLCJhIjoiY2pkODV3bWZqMXBpdTMzbGIxd25vNXlxZCJ9.71Pi1_DaNrnbD-t5-btaMw'
+    }).addTo(mymap);
+
+var marker = L.marker([59.9343, 30.3351]).addTo(mymap);
+marker.bindPopup("<b>Northwestern Region</b> <img src='img/pail.jpg'> <br>1975: 2424</br> <br>1985: 2000</br>", {
+minWidth:200
+}).openPopup();
+ </script>
+ 
+ </div>
+ 
+ 
 
   </script>
   
