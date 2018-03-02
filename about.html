@@ -111,13 +111,25 @@ marker.bindPopup("<b>Briansk Oblast</b><br>1975: 1657</br><br>1980: 2189</br> <b
 minWidth:200
 }).openPopup();
 var marker2 = L.marker([56.1446, 40.4179]).addTo(mymap);
-marker.bindPopup("<b>Vladimir Oblast</b><br>1975: 2245</br><br>1980: </br> <br>1985: 1337</br>", {
+marker.bindPopup("<b>Vladimir Oblast</b><br>1975: 2245</br><br>1980: 2189</br><br>1985: 1337</br>", {
 minWidth:200
 }).openPopup();
-var marker3 = L.marker([56.1446, 40.4179]).addTo(mymap);
-marker.bindPopup("<b>Kalinin Oblast (Today's Tver Oblast)</b><br>1975: 1702</br><br>1980: 1709</br> <br>1985: 716</br>", {
+var marker3 = L.marker([57.0022, 33.9853]).addTo(mymap);
+marker.bindPopup("<b>Kalinin Oblast (Today's Tver Oblast)</b><br>1975: 1702</br><br>1980: 1709</br><br>1985: 716</br>", {
 minWidth:200
 }).openPopup();
+var marker4 = L.marker([57.1057, 41.4830]).addTo(mymap);
+marker.bindPopup("<b>Ivanovo Oblast</b><br>1975: 449</br><br>1980: 564</br><br>1985: 393</br>", {
+minWidth:200
+}).openPopup();
+var marker5 = L.marker([54.3873, 35.1889]).addTo(mymap);
+marker.bindPopup("<b>Kaluga Oblast</b><br>1975: 2982</br><br>1980: 2392</br><br>1985: 1534 </br>", {
+minWidth:200
+}).openPopup();
+var popup = L.popup()
+    .setLatLng([58.5501, 43.9541])
+    .setContent("I am a standalone popup.")
+    .openOn(mymap);
  </script>
  
  </div>
