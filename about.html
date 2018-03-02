@@ -25,9 +25,7 @@
     
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
     <style>
-
 #mapid { height: 600px; }
-
 </style>
     
 
@@ -94,27 +92,32 @@
     <title>To Moscow</title>
   
   <div id="mapid"></div>
-<script src="leaflet.js"></script>
-  <script>
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
+<script>
 var mymap = L.map('mapid').setView([56.5010, 84.9925], 3);
-
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-   attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+	 attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
    maxZoom: 18,
    id: 'mapbox.streets',
    accessToken: 'pk.eyJ1IjoiZWxsaW8yNTIiLCJhIjoiY2o4cTNkN2g5MG5sejJ6bzA5bHV6aTl6NiJ9.vkCzMFiuQ_Ww3Q3Ox4tUCw'
     }).addTo(mymap);
-
 var marker = L.marker([59.9343, 30.3351]).addTo(mymap);
 marker.bindPopup("<b>Northwestern Region</b> <img src='img/pail.jpg'> <br>1975: 2424</br> <br>1985: 2000</br>", {
 minWidth:200
 }).openPopup();
  </script>
+ 
+ </div>
+ 
+ 
 
+  </script>
+  
         </div>
       </div>
     </div>
+</div>
 
     <hr>
 
