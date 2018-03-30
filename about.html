@@ -25,10 +25,9 @@
     
     <link rel="stylesheet" href="leaflet/leaflet.css" />
     <style>
-#mapid { height: 600px; }
+#mapid {height: 600px; width: 100%;}
 </style>
     
-
   </head>
 
   <body>
@@ -97,7 +96,7 @@
 <script>
 var mymap = L.map('mapid').setView([55.0084, 82.9357], 3);
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-	 attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+	 attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/" >CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
    maxZoom: 18,
    id: 'mapbox.streets',
    accessToken: 'pk.eyJ1IjoiZWxsaW8yNTIiLCJhIjoiY2o4cTNkN2g5MG5sejJ6bzA5bHV6aTl6NiJ9.vkCzMFiuQ_Ww3Q3Ox4tUCw'
