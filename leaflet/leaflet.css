@@ -135,7 +135,7 @@
 	left: 0;
 	}
 .leaflet-control {
-	float: left;
+	float: center;
 	clear: both;
 	}
 .leaflet-right .leaflet-control {
@@ -243,6 +243,7 @@
 .leaflet-container {
 	background: #ddd;
 	outline: 0;
+	width: 100%;
 	}
 .leaflet-container a {
 	color: #0078A8;
